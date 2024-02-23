@@ -1,5 +1,9 @@
  INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
 
+DATE: 23-02-2024
+NAME: DEEKSHA P
+ROLL NO : 212222040031
+DEPARTMENT: COMPUTER SCIENCE AND ENGINEERING
 
 
 
@@ -67,8 +71,39 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+ ```
+int pot;
+int led=7;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  
+  pot=analogRead(A0);
+  //Serial.print("Value=");
+  Serial.println(pot);
+  if(pot>900)
+  {
+  digitalWrite(led, HIGH);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(led, LOW);
+  delay(500); // Wait for 500 millisecond(s)
+}
+  else
+  {
+    digitalWrite(led,LOW);
+  delay(500);
+  }
+}
+```
+
+FIGURE 2: GRAPH
+
+![WhatsApp Image 2024-02-23 at 16 03 14](https://github.com/Deeksha78/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/128116204/5f568c69-7501-416b-b63d-00b76bf5d8f6)
 
 
 
@@ -81,9 +116,24 @@ CIRCUIT DIAGRAM
 **Simulation output:** 
 **
 
-
 [My image](username.github.com/repository/img/image.jpg)
 
+
+FIGURE 3: OFF CONDITION
+
+![WhatsApp Image 2024-02-23 at 16 00 49](https://github.com/Deeksha78/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/128116204/304d3afd-6eb1-4efc-82a8-e4ad2ca4225e)
+
+
+
+FIGURE 4: ON CONDITION
+
+![WhatsApp Image 2024-02-23 at 16 00 48](https://github.com/Deeksha78/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/128116204/ee0433a1-81fd-45a5-a94d-9d9f105a5d03)
+
+
+
+FIGURE 5: SCHEMATIC OUTPUT
+
+![WhatsApp Image 2024-02-23 at 16 00 47](https://github.com/Deeksha78/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/128116204/58601346-0932-407b-a47e-8bc8e6e542d5)
 
 
 
