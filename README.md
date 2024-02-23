@@ -116,7 +116,7 @@ FIGURE 1: GRAPH
 **Simulation output:** 
 **
 
-[My image](username.github.com/repository/img/image.jpg)
+
 
 
 FIGURE 2: OFF CONDITION
